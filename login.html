@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>login</title>
+		
+		<!--导入外部CSS样式-->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<!--用户登录表单-->
+		<div class="login-form-container" id="loginform">
+			
+			<form action="loginchk.php" method="post">
+				<h3>用户登录</h3>
+				<input type="email" class="box" placeholder="输入您的邮箱" name="username">
+				<input type="password" class="box" placeholder="输入您的密码" name="password">
+				
+				<input type="submit" value="立即登录" class="btn">
+				<input type="checkbox" id="remember">
+				<label for="remember">记住此用户</label>
+				
+				<p>忘记密码? <a href="editpsw.html">点击这里</a></p>
+				<p>还未拥有账号? <a href="register.html">立即注册</a></p>
+			</form>
+			
+		</div>
+		
+		<section class="home" id="home">
+			<div class="content" style="margin-top: -60rem;">
+				<h3>Travel and see the world</h3>
+				<p>discover new places with us, adventrue awaits</p>
+			</div>
+			
+			
+			<div class="video-container">
+				<video src="images/vid-2.mp4" id="video-slider" loop autoplay muted></video>
+			</div>
+		</section>
+	</body>
+</html>

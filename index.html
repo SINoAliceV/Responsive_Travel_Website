@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>响应式旅游网站</title>
+		
+		<!--导入外部CSS样式-->
+		<link rel="stylesheet" href="style.css">
+		
+		<!--导入外部JS文件-->
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		
+		<!--上浮按钮-->
+		<div class="ac" ><a href="#home"><img src="icons/back.png" width="30" height="30"></a></div>
+		
+		<!--隐藏的导航栏,页面缩小时显示-->
+		<input id="sn" class="sn" type="checkbox"/>
+		<nav class="navbar" id="an">
+			<a href="#home">home</a>
+			<a href="#packages">packages</a>
+			<a href="#services">services</a>
+			<a href="#gallery">gallery</a>
+		</nav>
+		
+		<!--网站头部开始-->
+		<header>
+			<!--菜单按钮-->
+			<label for="sn"><div id="menu-bar" style="border: 0 solid #000000;">
+				<img src="icons/menu.png" width="30" height="30" id="menu">
+			</div></label>
+			
+			<!--logo-->
+			<a href="#" class="logo"><span>T</span>ravel</a>
+			
+			<!--导航栏-->
+			<nav class="navbar">
+				<a href="#home">home</a>
+				<a href="#packages">packages</a>
+				<a href="#services">services</a>
+				<a href="#gallery">gallery</a>
+			</nav>
+			
+			
+			<!--图标-->
+			<div class="icons">
+				<a href="login.html"><img src="icons/login.png" width="30" height="30"
+									onmouseover="this.src='icons/loginhover.png'"
+									onmouseout="this.src='icons/login.png'"></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;					
+				<label for="ss"><img src="icons/search.png" width="30" height="30"
+									onmouseover="this.src='icons/searchhover.png'"
+									onmouseout="this.src='icons/search.png'"></label>
+			</div>
+			
+			
+			<!--搜索表单-->
+			<input id="ss" class="ss" type="checkbox"/>
+			<form action="login.html" class="search-bar-container" id="sc">
+				<input type="search" id="search-bar" placeholder="search here...">
+				<input type="image" src="icons/search.png" width="30" height="30" 
+						style="margin-bottom: -1rem; padding-left: 1rem;" 
+						onmouseover="this.src='icons/searchhover.png'"
+						onmouseout="this.src='icons/search.png'">
+			</form>
+		</header>
+		<!--网站头部结束-->
+		
+		
+		
+		
+		
+		<!--主页面开始-->
+		<section class="home" id="home">
+			<div class="content">
+				<h3>adventrue is worthwhile</h3>
+				<p>discover new places with us, adventrue awaits</p>
+				<a href="login.html" class="btn">探索更多</a>
+			</div>
+			
+			
+			<div class="video-container">
+				<video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+			</div>
+		</section>
+		<!--主页面结束-->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--packages section starts-->
+		<section class="packages" id="packages">
+			
+			<h1 class="heading">
+				<span>p</span>
+				<span>a</span>
+				<span>c</span>
+				<span>k</span>
+				<span>a</span>
+				<span>g</span>
+				<span>e</span>
+				<span>s</span>
+			</h1>
+			
+			<div class="box-container">
+				
+				<div class="box">
+					<img src="images/p-1.jpg" alt="" class="showpic">
+					<div class="content">
+						<h3><img src="icons/location.png" alt="" width="15" height="15">Beijing</h3>
+						<p>北京 中华人民共和国的首都, 中国政治中心、文化中心、国际交往中心、科技创新中心</p>
+						<div class="stars">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star0.png" alt="" width="10" height="10">
+						</div>
+						<div class="price">$80<span>$120</span></div>
+						<a href="login.html" class="btn">立即出发</a>
+					</div>
+				</div>
+				
+				<div class="box">
+					<img src="images/p-2.jpg" alt="" class="showpic">
+					<div class="content">
+						<h3><img src="icons/location.png" alt="" width="15" height="15">hawaii</h3>
+						<p>夏威夷州 美国唯一的群岛州, 由太平洋中部的132个岛屿组成. 首府位于瓦胡岛上的火奴鲁鲁（檀香山）</p>
+						<div class="stars">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star0.png" alt="" width="10" height="10">
+						</div>
+						<div class="price">$80<span>$120</span></div>
+						<a href="login.html" class="btn">立即出发</a>
+					</div>
+				</div>
+				
+				<div class="box">
+					<img src="images/p-3.jpg" alt="" class="showpic">
+					<div class="content">
+						<h3><img src="icons/location.png" alt="" width="15" height="15">sydney</h3>
+						<p>悉尼 位于澳大利亚的东南沿岸, 是澳大利亚新南威尔士州的首府, 也是澳大利亚面积最大、人口最多的城市</p>
+						<div class="stars">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star0.png" alt="" width="10" height="10">
+						</div>
+						<div class="price">$80<span>$120</span></div>
+						<a href="login.html" class="btn">立即出发</a>
+					</div>
+				</div>
+				
+				<div class="box">
+					<img src="images/p-4.jpg" alt="" class="showpic">
+					<div class="content">
+						<h3><img src="icons/location.png" alt="" width="15" height="15">paris</h3>
+						<p>巴黎 法兰西共和国的首都和最大城市, 也是法国的政治、经济、文化和商业中心, 世界五个国际大都市之一</p>
+						<div class="stars">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star0.png" alt="" width="10" height="10">
+						</div>
+						<div class="price">$80<span>$120</span></div>
+						<a href="login.html" class="btn">立即出发</a>
+					</div>
+				</div>
+				
+				<div class="box">
+					<img src="images/p-5.jpg" alt="" class="showpic">
+					<div class="content">
+						<h3><img src="icons/location.png" alt="" width="15" height="15">tokyo</h3>
+						<p>东京 日本首都, 位于日本关东平原中部, 是面向东京湾的国际都市, 日本三大都市圈之一东京都市圈的中心城市</p>
+						<div class="stars">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star0.png" alt="" width="10" height="10">
+						</div>
+						<div class="price">$80<span>$120</span></div>
+						<a href="login.html" class="btn">立即出发</a>
+					</div>
+				</div>
+				
+				<div class="box">
+					<img src="images/p-6.jpg" alt="" class="showpic">
+					<div class="content">
+						<h3><img src="icons/location.png" alt="" width="15" height="15">Venice</h3>
+						<p>威尼斯 意大利东北部著名的旅游与工业城市, 也是威尼托地区的首府, 被称作“亚得里亚海明珠”</p>
+						<div class="stars">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star1.png" alt="" width="10" height="10">
+							<img src="icons/star0.png" alt="" width="10" height="10">
+						</div>
+						<div class="price">$80<span>$120</span></div>
+						<a href="login.html" class="btn">立即出发</a>
+					</div>
+				</div>
+				
+			</div>
+			
+		</section>
+		<!--packages section ends-->
+		
+		
+		
+		
+		
+		<!--服务区域开始-->
+		<section class="services" id="services">
+			
+			<h1 class="heading">
+				<span>s</span>
+				<span>e</span>
+				<span>r</span>
+				<span>v</span>
+				<span>i</span>
+				<span>c</span>
+				<span>e</span>
+				<span>s</span>
+			</h1>
+			
+			<div class="box-container">
+				
+				<div class="box">
+					<div><img src="icons/hotel.png" alt="" width="50" height="50"></div>
+					<h3>affordable hotels</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+				</div>
+				
+				<div class="box">
+					<div><img src="icons/food.png" alt="" width="50" height="50"></div>
+					<h3>food and drinks</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+				</div>
+				
+				<div class="box">
+					<div><img src="icons/guide.png" alt="" width="50" height="50"></div>
+					<h3>safty guide</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+				</div>
+				
+				<div class="box">
+					<div><img src="icons/world.png" alt="" width="50" height="50"></div>
+					<h3>around the world</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+				</div>
+				
+				<div class="box">
+					<div><img src="icons/plane.png" alt="" width="50" height="50"></div>
+					<h3>fastest travel</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+				</div>
+				
+				<div class="box">
+					<div><img src="icons/adventure.png" alt="" width="50" height="50"></div>
+					<h3>adventures</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+				</div>
+			</div>
+		</section>
+		<!--服务区域结束-->
+		
+		
+		
+		
+		<!--画廊部分开始-->
+		<section class="gallery" id="gallery">
+			
+			<h1 class="heading">
+				<span>g</span>
+				<span>a</span>
+				<span>l</span>
+				<span>l</span>
+				<span>e</span>
+				<span>r</span>
+				<span>y</span>
+			</h1>
+			
+			<div class="box-container">
+				
+				<div class="box">
+					<img src="images/g-1.jpg" alt="">
+					<div class="content">
+						<h3>amazing places</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+						<a href="login.html" class="btn">探索更多内容</a>
+					</div>
+				</div>
+				
+				<div class="box">
+					<img src="images/g-2.jpg" alt="">
+					<div class="content">
+						<h3>amazing places</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+						<a href="login.html" class="btn">探索更多内容</a>
+					</div>
+				</div>
+				
+				<div class="box">
+					<img src="images/g-3.jpg" alt="">
+					<div class="content">
+						<h3>amazing places</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+						<a href="login.html" class="btn">探索更多内容</a>
+					</div>
+				</div>
+				
+				<div class="box">
+					<img src="images/g-4.jpg" alt="">
+					<div class="content">
+						<h3>amazing places</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+						<a href="login.html" class="btn">探索更多内容</a>
+					</div>
+				</div>
+				
+				<div class="box">
+					<img src="images/g-5.jpg" alt="">
+					<div class="content">
+						<h3>amazing places</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+						<a href="login.html" class="btn">探索更多内容</a>
+					</div>
+				</div>
+				
+				<div class="box">
+					<img src="images/g-6.jpg" alt="">
+					<div class="content">
+						<h3>amazing places</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+						<a href="login.html" class="btn">探索更多内容</a>
+					</div>
+				</div>
+				
+				<div class="box">
+					<img src="images/g-7.jpg" alt="">
+					<div class="content">
+						<h3>amazing places</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+						<a href="login.html" class="btn">探索更多内容</a>
+					</div>
+				</div>
+				
+				<div class="box">
+					<img src="images/g-8.jpg" alt="">
+					<div class="content">
+						<h3>amazing places</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+						<a href="login.html" class="btn">探索更多内容</a>
+					</div>
+				</div>
+				
+				<div class="box">
+					<img src="images/g-9.jpg" alt="">
+					<div class="content">
+						<h3>amazing places</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+						<a href="login.html" class="btn">探索更多内容</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--画廊部分结束-->
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--相关品牌部分开始-->
+		<section class="brand">
+			
+				<div class="box-container">
+					<div class="box"><img src="images/1.jpg" alt=""></div>
+					<div class="box"><img src="images/2.jpg" alt=""></div>
+					<div class="box"><img src="images/3.jpg" alt=""></div>
+					<div class="box"><img src="images/4.jpg" alt=""></div>
+					<div class="box"><img src="images/5.jpg" alt=""></div>
+					<div class="box"><img src="images/6.jpg" alt=""></div>
+				</div>
+			
+		</section>
+		<!--相关品牌部分结束-->
+		
+		
+		
+		
+		
+		
+		<!--尾部开始-->
+		<section class="footer">
+			
+			<div class="box-container">
+				
+				<div class="box">
+					<h3>about us</h3>
+					<p>Lorem ipsum dolor sit amet consectetur
+					adipisicing elit.Veritatis,nam!</p>
+				</div>
+				
+				<div class="box">
+					<h3>branch locations</h3>
+					<a href="">china</a>
+					<a href="">US</a>
+					<a href="">japan</a>
+					<a href="">france</a>
+				</div>
+				
+				<div class="box">
+					<h3>quick links</h3>
+					<a href="#home">home</a>
+					
+					<a href="#packages">packages</a>
+					<a href="#services">services</a>
+					<a href="#gallery">gallery</a>
+				
+					
+				</div>
+				
+				<div class="box">
+					<h3>follow us</h3>
+					<a href="#">facebook</a>
+					<a href="#">instagram</a>
+					<a href="#">twitter</a>
+					<a href="#">linkedin</a>
+				</div>
+			</div>
+			
+			<h1 class="credit">created by <span>mr.web designer</span>| all rights reserved!</h1>
+			
+		</section>
+		<!--尾部结束-->
+		
+		
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript">
+		
+			/*菜单图标替换*/
+			document.getElementById("menu-bar").onmouseover=function(){
+				document.getElementById("menu").src="icons/menuhover.png";
+			}
+			
+			document.getElementById("menu-bar").onmouseout=function(){
+				document.getElementById("menu").src="icons/menu.png";
+			}
+			
+		</script>
+		
+		
+		
+		
+		
+	</body>
+</html>

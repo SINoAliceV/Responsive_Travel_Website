@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>login</title>
+		
+		<!--导入外部CSS样式-->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<!--用户注册表单-->
+		<div class="login-form-container">
+			
+			<form action="register.php" method="post">
+				<h3>用户注册</h3>
+				<input type="email" class="box" placeholder="输入您的邮箱" name="username">
+				<input type="password" class="box" placeholder="输入您的密码" name="password" id="psw1">
+				<input type="password" class="box" placeholder="再次输入您的密码"  id="psw2">
+				
+				<input type="submit" value="立即注册" class="btn">
+			
+			</form>
+			
+		</div>
+		
+		
+		<section class="home" id="home">
+			<div class="content" style="margin-top: -60rem;">
+				<h3>Life is a long journey</h3>
+				<p>discover new places with us, adventrue awaits</p>
+			</div>
+			
+			
+			<div class="video-container">
+				<video src="images/vid-3.mp4" id="video-slider" loop autoplay muted></video>
+			</div>
+		</section>
+		
+		
+		<script type="text/javascript">
+			window.onload=function(){
+				document.getElementById("psw2").onblur=function(){
+					if(document.getElementById('psw2').value!==document.getElementById('psw1').value){
+						alert("两次密码不一致!");
+						document.getElementById('psw2').value="";
+					}	
+				}
+			}
+		</script>
+	</body>
+</html>
